@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+body{
+    max-width: 100%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgb(226, 225, 225);
+    
+    height: 50px;
+}
+
+.tete h1{
+    text-align: center;
+   
+}
+.tete a{
+    text-decoration: none;
+   display: flex;
+   margin-left:10%;
+}
+.tete{
+    display: grid;
+    height: 170px;
+}
+/*.button{
+    padding: 15 40px
+    border:gray;
+    border-radius: 10px;
+    color:black;
+    background-color: white;
+    /* Button */
+    
+    button {
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        display: inline-block;
+        line-height: 1;
+        font-family: arial;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+        
+        
+    }
+    button span{
+        display: none;
+    }
+   
+    
+    .produit{
+        text-align: center;
+        line-height: 10;
+
+    }
+    button.produits {
+        height: 40px;
+        width: 200px;
+        background-color: white;
+        color: black;
+        
+        
+    }
+    
+   .lien{
+    display: flex;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+   }
+   .logo{
+       text-align: center;
+       color: gray;
+       border-top: 2px solid rgb(201, 199, 199);
+       padding-top: 100px;
+       padding-bottom: 100px;
+   }
+
+
+
+
+    
+/*mobile*/
+@media screen and (min-width: 361px){
+    .lescartes-prdts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+    }
+    button{
+        border: 2px solid rgb(207, 203, 203);
+        padding:5px 10px;
+
+
+    }
+    button span{
+        display:inline;
+        font-weight: bold;
+        
+        } 
+
+ 
+    
+}
+
+
+/*disktop*/
+@media screen and (min-width: 1000px){
+    .lescartes-prdts{
+        max-width: 800px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr; 
+        gap:60px;
+        margin-left: auto;
+        margin-right: auto;
+    text-align: center;
+    }
+   /* button span{
+        display: inline;
+    }*/
+    .tete a{
+        text-decoration: none;
+       display: flex;
+       margin-left:23%;
+    }
+}  
